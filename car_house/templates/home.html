@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<div class="row mt-3 border border-info p-5">
+  <div class="col-md-6">
+    <h1 class="text-info mb-4">Best in the Country</h1>
+
+    <p>
+      Car House earned our Best Overall award for its comprehensive service
+      lineup, which includes car selling, buying, financing, and car warranty
+      programs. The company has three decades of experience and positive
+      customer reviews. It also purchases cars directly, eliminating third-party
+      fees. While CarMax doesn’t provide a private party sale option, it does
+      offer trade-in value for select vehicles, plus free car drop-off and
+      pickup services in select locations.
+    </p>
+  </div>
+
+  <div class="col-md-6">
+    <div><img class="w-100" src="{% static "banner.jpg" %}" alt=""></div>
+  </div>
+</div>
+
+{% include "all_car.html" %} {% endblock %}
